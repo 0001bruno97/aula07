@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <estilo> _ _
+        . conteudo
+        {
+            exibição : flexível;
+            flex-direction : coluna;
+            largura :  200 px ;
+        }
+        . mensagem
+        {
+            cor : vermelho;
+            tamanho da fonte :  14 px ;
+        }
+    </estilo> _ _
+</ cabeça >
+< corpo >
+    < div  classe =" conteudo " >
+        Nome: < input  type =" text " id =" nome " >
+        < div  class =" mensagem " id =" mensagem " >  </ div >
+    </div> _ _
+    < br >  < br >
+    < botão  onclick =" Verificar(); " > VALIDAR </ botão >
+    
+</ corpo >
+<script> _ _
+    Função  Verificar ( )
+    {
+        if  ( nome . valor  ==  "" )
+        {
+            mensagem . innerHTML  =  "Digite um nome" ;
+        }
+    }
+</ script >
+</html> _ _
