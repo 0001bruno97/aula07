@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeitos</title>
+    <estilo> _ _
+        corpo
+        {
+            largura : 100 % ;
+            altura : 100 vh ;
+            margem : 0 % ;
+            exibição : flexível;
+            justificar-conteúdo : centro;
+            
+        }
+        . preto
+        {
+            largura : 80 % ;
+            altura : 80 px ;
+            cor de fundo : preto;
+            cor : branco;
+            posição : fixo;
+            superior : 0 px ;
+            raio da borda : 0 px  0 px  30 px  30 px ;
+            exibição : flexível;
+            flex-direction : linha;
+            justificar-conteúdo : espaço ao redor;
+            itens de alinhamento : centro;
+            alinhar-conteúdo : centro;
+            índice z :  1 ;
+            
+        }
+        . amarela
+        {
+            largura : 100 px ;
+            altura : 300 px ;
+            cor de fundo : amarelo;
+            posição : absoluto;
+            esquerda : 285 px ;
+            superior : -210 px ;
+            índice z : 0 ;;
+            exibição : flexível ;
+            flex-direction : coluna ;
+            justificar-conteúdo : espaço ao redor ;
+            alinhar-conteúdo : centro ;
+            itens de alinhamento : centro ;
+            raio da borda : 0px 0px 30px 30px;
+        }
+        . azul
+        {
+            largura : 100 px ;
+            altura : 300 px ;
+            cor de fundo : rgb ( 49 ,  180 ,  231 );
+            posição : absoluto;
+            esquerda : 670 px ;
+            superior : -210 px ;
+            índice z : 0 ;;
+            exibição : flexível ;
+            flex-direction : coluna ;
+            justificar-conteúdo : espaço ao redor ;
+            alinhar-conteúdo : centro ;
+            itens de alinhamento : centro ;
+            raio da borda : 0px 0px 30px 30px;
+        }
+        . Vermelho
+        {
+            largura : 100 px ;
+            altura : 300 px ;
+            cor de fundo : rgb ( 216 ,  97 ,  97 );
+            posição : absoluto;
+            esquerda : 1050 px ;
+            superior : -210 px ;
+            índice z : 0 ;;
+            exibição : flexível ;
+            flex-direction : coluna ;
+            justificar-conteúdo : espaço ao redor ;
+            alinhar-conteúdo : centro ;
+            itens de alinhamento : centro ;
+            raio da borda : 0px 0px 30px 30px;
+        }
+        . opção : hover
+        {
+            tamanho da fonte :  25 px ;
+            cor : amarelo esverdeado;
+        }
+        . deslizar
+        {
+            animação : descer 1 s para frente;
+        }
+        @keyframes descer
+        {
+            0 % { topo : -208 px }
+            100 % { topo : 80 px }
+        }
+        
+    </estilo> _ _
+</ cabeça >
+< corpo >
+    < div  class =" preto " > 
+        < div  onclick =" animaamarela(); " class =" opcao " > MENU 1 </ div >
+        < div  onclick =" animaazul(); " class =" opcao " > MENU 2 </ div >
+        < div  onclick =" animavermelho(); " class =" opcao " > MENU 3 </ div >
+    </div> _ _
+    < div  class =" amarela " id =" amarela " > 
+        < div  class =" opcao " > FUSCA     </ div >
+        < div  class =" opcao " > KOMBI     </ div >
+        < div  class =" opcao " > CARROÇA   </ div >
+        < div  class =" opcao " > GOL       </ div >
+        < div  class =" opcao " > FERRARI   </ div >
+        < div  class =" opcao " > BRASÍLIA </ div >
+    </div> _ _
+    < div  class =" azul " id =" azul " > 
+        < div  class =" opcao " > texto1   </ div >
+        < div  class =" opcao " > texto2   </ div >
+        < div  class =" opcao " > texto3   </ div >
+        < div  class =" opcao " > texto4   </ div >
+        < div  class =" opcao " > texto5   </ div >
+        < div  class =" opcao " > texto6   </ div >
+    </div> _ _
+    < div  class =" vermelho " id =" vermelho " > 
+        < div  class =" opcao " > texto1   </ div >
+        < div  class =" opcao " > texto2   </ div >
+        < div  class =" opcao " > texto3   </ div >
+        < div  class =" opcao " > texto4   </ div >
+        < div  class =" opcao " > texto5   </ div >
+        < div  class =" opcao " > texto6   </ div >
+    </div> _ _
+</ corpo >
+<script> _ _
+    função  animaamarela ( )
+    {
+        vermelho . classList . remover ( "deslizar" ) ;
+        amarela . classList . add ( "deslizar" ) ;
+        azul . classList . remover ( "deslizar" ) ;
+    }
+    função  animaazul ( )
+    {
+        amarela . classList . remover ( "deslizar" ) ;
+        azul . classList . add ( "deslizar" ) ;
+        vermelho . classList . remover ( "deslizar" ) ;
+    }
+    função  animavermelho ( )
+    {
+        azul . classList . remover ( "deslizar" ) ;
+        vermelho . classList . add ( "deslizar" ) ;
+        amarela . classList . remover ( "deslizar" ) ;
+    }
+
+
+</ script >
+</html> _ _
